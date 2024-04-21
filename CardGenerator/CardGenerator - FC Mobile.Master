@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CardGenerator - FC Mobile.master.cs" Inherits="CardGenerator.CardGenerator___FC_Mobile" ClientIDMode="Static" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="icon" href="IMAGENES/iconWindows.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>FC Mobile Card Generator</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="body">
+    <form id="form1" runat="server">
+        <div>
+
+
+     <div class="cont-flex-1">
+    <!-- SECCION PARA EL HEADER -->
+    <section>
+
+        <div class="header-content contenedorCentradoH">
+            <div class="content-body">
+             <div class="icon-header contenedorCentradoV">
+             <a href="CardGeneratorHome.aspx"> <img class="float-left img-content" runat="server" src="IMAGENES/futbin-green-small.png" alt="Logo Generador de Cartas FC Mobbile"> </a> 
+                 
+             </div>
+              <div class="login-header contenedorCentradoV float-right">
+        <!--       <button runat="server" type="button" id="btnLogin" class="btnLogin  poppins-semibold" onclick="Evento"> Log in </button> -->
+                  <asp:Button ID="btnLoginC" runat="server" Text="Log in" OnClick="btnLogin_Click" CssClass="btnLogin  poppins-semibold" />
+                  <asp:Button ID="btnLogOut" runat="server" Text="Log Out" OnClick="btnLogOut_Click" Visible="false" CssClass="btnLogin  poppins-semibold" />
+              </div>
+              <div class="user-icon contenedorCentradoV ">
+              <asp:ImageButton ID="imgProfile" runat="server" ImageUrl="" CssClass=" float-left img-contentLogin" alt="Logo Generador de Cartas FC Mobbile" OnClick="imgProfile_Click" />
+              </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- SECCION PARA EL CONTENIDO -->
+
+
+   
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+          <!-- SECCION PARA EL FOOTER -->
+ <section class="footer">
+     <footer class="contenedorCentradoH">
+         <div class="content-body">
+
+             <div class="footer-body">
+
+                 <div class="row">
+                     <div class="col-sm-4">
+                         <div class="footer-text">
+                             <h1 class="poppins-bold"> FC Mobile card generator </h1>
+                             <p class="poppins-light"> Personalized FC Mobile card creator and customizer </p>
+                         </div>
+                         <div class="footer-Downloads">
+                           <a href="#">  <img  class="Download-Img" src="IMAGENES/DownloadPlayStore.png"> </a>
+                         </div>
+                     </div>
+                 </div>
+
+             </div>
+
+             <div class="footer-footer">
+                 <div class="row">
+                     <div class="col-sm-8">
+                        <div class="fo-he-di">
+                         <a class="enlace" href="#">  <p class="poppins-light enlace"> Privace Policy </p></a>
+                         <a class="enlace" href="#"> <p class="poppins-light enlace"> Terms and Conditions </p></a>
+                         <a class="enlace" href="#"> <p class="poppins-light enlace"> Contact Us </p></a>
+                        </div>
+                     </div>
+
+                     <div class="col-sm-1">
+                     </div>
+
+                     <div class="col-sm-3">
+                        
+                     </div>
+                 </div>                    
+
+             </div>
+
+
+
+         </div>
+
+     </footer>
+     <div class="contenedorCentradoH" style="background-color: #202020;">
+     <div class="content-body" >
+     <div class="footer-body">
+         <div class="row">
+             <div class="col-sm-12">
+                 <div class="footer-text">    
+                     <p class="poppins-light"> © 2024 Copyright CardGenerator.app All FIFA assets are property of EA Sports. </p>
+                 </div>
+             </div>
+         </div>
+     </div>
+     </div>
+ </div>
+ </section>
+ <script src="IMAGENES/JS/DownloadImage.js"></script>
+        </div>
+    </form>
+</body>
+</html>

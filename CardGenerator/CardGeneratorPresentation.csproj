@@ -1,0 +1,467 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EBA0EC8-481D-496E-8D38-6E9BEEA583B6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CardGenerator</RootNamespace>
+    <AssemblyName>CardGenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44338</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccountProfile.aspx" />
+    <Content Include="CardGeneratorHome.aspx" />
+    <Content Include="estilos.css" />
+    <Content Include="IMAGENES\AccountIcon4.png" />
+    <Content Include="IMAGENES\AccountLogo1.png" />
+    <Content Include="IMAGENES\AccountLogo2.png" />
+    <Content Include="IMAGENES\AccountLogo3.png" />
+    <Content Include="IMAGENES\AccountLogo5.png" />
+    <Content Include="IMAGENES\AccountLogo6.png" />
+    <Content Include="IMAGENES\AccountLogoDefault-removebg-preview.png" />
+    <Content Include="IMAGENES\Afganistan.png" />
+    <Content Include="IMAGENES\Albania.png" />
+    <Content Include="IMAGENES\Alemania.png" />
+    <Content Include="IMAGENES\Andorra.png" />
+    <Content Include="IMAGENES\Angola.png" />
+    <Content Include="IMAGENES\Antillas.png" />
+    <Content Include="IMAGENES\Ant_Barbuda.png" />
+    <Content Include="IMAGENES\ArabiaSaudita.png" />
+    <Content Include="IMAGENES\Argelia.png" />
+    <Content Include="IMAGENES\Argentina.png" />
+    <Content Include="IMAGENES\Armenia.png" />
+    <Content Include="IMAGENES\Aruba.png" />
+    <Content Include="IMAGENES\Australia.png" />
+    <Content Include="IMAGENES\Austria.png" />
+    <Content Include="IMAGENES\Azerbaiyan.png" />
+    <Content Include="IMAGENES\Back-WinterWilds.png" />
+    <Content Include="IMAGENES\Back-WinterWildsBase.png" />
+    <Content Include="IMAGENES\Background.png" />
+    <Content Include="IMAGENES\Back_BaseIconJourney.png" />
+    <Content Include="IMAGENES\Back_Bronce.png" />
+    <Content Include="IMAGENES\Back_Captains.png" />
+    <Content Include="IMAGENES\Back_ConferenceCup.png" />
+    <Content Include="IMAGENES\Back_DayoftheDead.png" />
+    <Content Include="IMAGENES\Back_EuroCup.png" />
+    <Content Include="IMAGENES\Back_EuropeLeague.png" />
+    <Content Include="IMAGENES\Back_Founders.png" />
+    <Content Include="IMAGENES\Back_FoundersBase.png" />
+    <Content Include="IMAGENES\Back_Gold.png" />
+    <Content Include="IMAGENES\Back_HeroesBase.png" />
+    <Content Include="IMAGENES\Back_HeroesPremiun.png" />
+    <Content Include="IMAGENES\Back_HeroesUCL.png" />
+    <Content Include="IMAGENES\Back_IconCaptains.png" />
+    <Content Include="IMAGENES\Back_IconDayoftheDead.png" />
+    <Content Include="IMAGENES\Back_IconFounders.png" />
+    <Content Include="IMAGENES\Back_IconLibertadoresCup.png" />
+    <Content Include="IMAGENES\Back_IconLunarYear.png" />
+    <Content Include="IMAGENES\Back_IconMediumJourney.png" />
+    <Content Include="IMAGENES\Back_IconMls.png" />
+    <Content Include="IMAGENES\Back_IconNationalValue.png" />
+    <Content Include="IMAGENES\Back_IconPremiunJourney.png" />
+    <Content Include="IMAGENES\Back_IconRamadan.png" />
+    <Content Include="IMAGENES\Back_IconRivals.png" />
+    <Content Include="IMAGENES\Back_IconToty.png" />
+    <Content Include="IMAGENES\Back_IconUCL.png" />
+    <Content Include="IMAGENES\Back_IconWelcome.png" />
+    <Content Include="IMAGENES\Back_IconWinterWilds.png" />
+    <Content Include="IMAGENES\Back_LibertadoresCup.png" />
+    <Content Include="IMAGENES\Back_LibertadoresCupSilver.png" />
+    <Content Include="IMAGENES\Back_LunarYear.png" />
+    <Content Include="IMAGENES\Back_Mls.png" />
+    <Content Include="IMAGENES\Back_Moments.png" />
+    <Content Include="IMAGENES\Back_NationalValue.png" />
+    <Content Include="IMAGENES\Back_PotmBundesliga.png" />
+    <Content Include="IMAGENES\Back_PotmFrance.png" />
+    <Content Include="IMAGENES\Back_PotmLaLiga.png" />
+    <Content Include="IMAGENES\Back_PotmPremierLeague.png" />
+    <Content Include="IMAGENES\Back_PotmSerieA.png" />
+    <Content Include="IMAGENES\Back_Ramadan.png" />
+    <Content Include="IMAGENES\Back_RivalsBlue.png" />
+    <Content Include="IMAGENES\Back_RivalsRed.png" />
+    <Content Include="IMAGENES\Back_Rulesbreaker.png" />
+    <Content Include="IMAGENES\Back_Silver.png" />
+    <Content Include="IMAGENES\Back_SouthAmericanCup.png" />
+    <Content Include="IMAGENES\Back_SouthAmericanCupSilver.png" />
+    <Content Include="IMAGENES\Back_StarPass.png" />
+    <Content Include="IMAGENES\Back_Totw.png" />
+    <Content Include="IMAGENES\Back_TotyBase.png" />
+    <Content Include="IMAGENES\Back_TotyNominies.png" />
+    <Content Include="IMAGENES\Back_UCL.png" />
+    <Content Include="IMAGENES\Back_UCLBase.png" />
+    <Content Include="IMAGENES\Back_Utoty.png" />
+    <Content Include="IMAGENES\Back_Welcome.png" />
+    <Content Include="IMAGENES\Back_WelcomeMedium.png" />
+    <Content Include="IMAGENES\Bahamas.png" />
+    <Content Include="IMAGENES\Bangladesh.png" />
+    <Content Include="IMAGENES\Barbados.png" />
+    <Content Include="IMAGENES\Barein.png" />
+    <Content Include="IMAGENES\Base_TotyMedium.png" />
+    <Content Include="IMAGENES\Belgica.png" />
+    <Content Include="IMAGENES\Belice.png" />
+    <Content Include="IMAGENES\Benin.png" />
+    <Content Include="IMAGENES\Bermuda.png" />
+    <Content Include="IMAGENES\Bielorrusia.png" />
+    <Content Include="IMAGENES\Bissau.png" />
+    <Content Include="IMAGENES\Bolivia.png" />
+    <Content Include="IMAGENES\Bosnia.png" />
+    <Content Include="IMAGENES\Botsuana.png" />
+    <Content Include="IMAGENES\Brasil.png" />
+    <Content Include="IMAGENES\Brunei.png" />
+    <Content Include="IMAGENES\Bulgaria.png" />
+    <Content Include="IMAGENES\BurkinaFasso.png" />
+    <Content Include="IMAGENES\Burundi.png" />
+    <Content Include="IMAGENES\Butan.png" />
+    <Content Include="IMAGENES\CaboVerde.png" />
+    <Content Include="IMAGENES\Camboya.png" />
+    <Content Include="IMAGENES\Camerun.png" />
+    <Content Include="IMAGENES\Canada.png" />
+    <Content Include="IMAGENES\CardGenerator.png" />
+    <Content Include="IMAGENES\Chad.png" />
+    <Content Include="IMAGENES\Chile.png" />
+    <Content Include="IMAGENES\ChinaTaipei.png" />
+    <Content Include="IMAGENES\Chipre.png" />
+    <Content Include="IMAGENES\Colombia.png" />
+    <Content Include="IMAGENES\Comoras.png" />
+    <Content Include="IMAGENES\Congo.png" />
+    <Content Include="IMAGENES\CoreaDelNorte.png" />
+    <Content Include="IMAGENES\CostaDeMarfil.png" />
+    <Content Include="IMAGENES\CostaRica.png" />
+    <Content Include="IMAGENES\Croacia.png" />
+    <Content Include="IMAGENES\Cuba.png" />
+    <Content Include="IMAGENES\Dinamarca.png" />
+    <Content Include="IMAGENES\Dominicana.png" />
+    <Content Include="IMAGENES\DownloadAppStoe.png" />
+    <Content Include="IMAGENES\DownloadPlayStore-removebg-preview %281%29.png" />
+    <Content Include="IMAGENES\DownloadPlayStore.png" />
+    <Content Include="IMAGENES\Ecuador.png" />
+    <Content Include="IMAGENES\Egipto.png" />
+    <Content Include="IMAGENES\ElSalvador.png" />
+    <Content Include="IMAGENES\EmiratosArabes.png" />
+    <Content Include="IMAGENES\Eritrea.png" />
+    <Content Include="IMAGENES\Escocia.png" />
+    <Content Include="IMAGENES\Eslovaquia.png" />
+    <Content Include="IMAGENES\Eslovenia.png" />
+    <Content Include="IMAGENES\España.png" />
+    <Content Include="IMAGENES\Estonia.png" />
+    <Content Include="IMAGENES\Etiopia.png" />
+    <Content Include="IMAGENES\EU.png" />
+    <Content Include="IMAGENES\Filipinas.png" />
+    <Content Include="IMAGENES\Finlandia.png" />
+    <Content Include="IMAGENES\Fiyi.png" />
+    <Content Include="IMAGENES\Francia.png" />
+    <Content Include="IMAGENES\futbin-green-small.ico" />
+    <Content Include="IMAGENES\futbin-green-small.png" />
+    <Content Include="IMAGENES\Gabon.png" />
+    <Content Include="IMAGENES\Gales.png" />
+    <Content Include="IMAGENES\Gambia.png" />
+    <Content Include="IMAGENES\Georgia.png" />
+    <Content Include="IMAGENES\Ghana.png" />
+    <Content Include="IMAGENES\Gibaltrar.png" />
+    <Content Include="IMAGENES\Granada.png" />
+    <Content Include="IMAGENES\Grecia.png" />
+    <Content Include="IMAGENES\Groelandia.png" />
+    <Content Include="IMAGENES\Guam.png" />
+    <Content Include="IMAGENES\Guatemala.png" />
+    <Content Include="IMAGENES\Guinea.png" />
+    <Content Include="IMAGENES\GuineaEcuatorial.png" />
+    <Content Include="IMAGENES\Guyana.png" />
+    <Content Include="IMAGENES\Haiti.png" />
+    <Content Include="IMAGENES\Holanda.png" />
+    <Content Include="IMAGENES\Honduras.png" />
+    <Content Include="IMAGENES\Hong Kong.png" />
+    <Content Include="IMAGENES\Hungria.png" />
+    <Content Include="IMAGENES\iconWindows.ico" />
+    <Content Include="IMAGENES\iconWindows.png" />
+    <Content Include="IMAGENES\India.png" />
+    <Content Include="IMAGENES\Indonesia.png" />
+    <Content Include="IMAGENES\Inglaterra.png" />
+    <Content Include="IMAGENES\Irak.png" />
+    <Content Include="IMAGENES\IsalsVrit.png" />
+    <Content Include="IMAGENES\IslasCaiman.png" />
+    <Content Include="IMAGENES\IslasFeroe.png" />
+    <Content Include="IMAGENES\IslasSalomon.png" />
+    <Content Include="IMAGENES\JS\DownloadImage.js" />
+    <Content Include="IMAGENES\LeagueCardDefault.png" />
+    <Content Include="IMAGENES\LoginIcon.png" />
+    <Content Include="IMAGENES\luxa.org-opacity-changed-Background.png" />
+    <Content Include="IMAGENES\normal.png" />
+    <Content Include="IMAGENES\RenderzCardDefault.png" />
+    <Content Include="IMAGENES\Rumania.png" />
+    <Content Include="IMAGENES\Rusia.png" />
+    <Content Include="IMAGENES\Samoa.png" />
+    <Content Include="IMAGENES\SantaLucia.png" />
+    <Content Include="IMAGENES\Senegal.png" />
+    <Content Include="IMAGENES\Serbia.png" />
+    <Content Include="IMAGENES\seychelles.png" />
+    <Content Include="IMAGENES\SierraLeona.png" />
+    <Content Include="IMAGENES\Singapur.png" />
+    <Content Include="IMAGENES\Siria.png" />
+    <Content Include="IMAGENES\Somalia.png" />
+    <Content Include="IMAGENES\SriLanka.png" />
+    <Content Include="IMAGENES\Sudan.png" />
+    <Content Include="IMAGENES\SudanDelSur.png" />
+    <Content Include="IMAGENES\Suecia.png" />
+    <Content Include="IMAGENES\Suiza.png" />
+    <Content Include="IMAGENES\Surinam.png" />
+    <Content Include="IMAGENES\SVYGran.png" />
+    <Content Include="IMAGENES\Tahiti.png" />
+    <Content Include="IMAGENES\Tailandia.png" />
+    <Content Include="IMAGENES\Tanzania.png" />
+    <Content Include="IMAGENES\Tayikistan.png" />
+    <Content Include="IMAGENES\TeamCardDefault.png" />
+    <Content Include="IMAGENES\TimorOriental.png" />
+    <Content Include="IMAGENES\Togo.png" />
+    <Content Include="IMAGENES\TomePRIN.png" />
+    <Content Include="IMAGENES\Tonga.png" />
+    <Content Include="IMAGENES\Turquia.png" />
+    <Content Include="IMAGENES\TYTobago.png" />
+    <Content Include="IMAGENES\Ucrania.png" />
+    <Content Include="IMAGENES\Uganda.png" />
+    <Content Include="IMAGENES\uruguay.png" />
+    <Content Include="IMAGENES\Uzbekistan.png" />
+    <Content Include="IMAGENES\Vanuato.png" />
+    <Content Include="IMAGENES\Venezuela.png" />
+    <Content Include="IMAGENES\Vietnam.png" />
+    <Content Include="IMAGENES\Yemen.png" />
+    <Content Include="IMAGENES\Yibuti.png" />
+    <Content Include="IMAGENES\Zimbabue.png" />
+    <Content Include="LEAGUES\1A_PRO_LEAGUE.png" />
+    <Content Include="LEAGUES\3F_SuperLiga.png" />
+    <Content Include="LEAGUES\3_LIGA.png" />
+    <Content Include="LEAGUES\Allsvensken.png" />
+    <Content Include="LEAGUES\Austria_Bundesliga %281%29.png" />
+    <Content Include="LEAGUES\Austria_Bundesliga.png" />
+    <Content Include="LEAGUES\Bundesliga.png" />
+    <Content Include="LEAGUES\Bundesliga2.png" />
+    <Content Include="LEAGUES\Ceska_Liga.png" />
+    <Content Include="LEAGUES\Chinesse_Super_League.png" />
+    <Content Include="LEAGUES\Cinch_premiership.png" />
+    <Content Include="LEAGUES\CONMEBOL_Libertadores.png" />
+    <Content Include="LEAGUES\CONMEBOL_Sudamericana.png" />
+    <Content Include="LEAGUES\Credit_Suisse_Super_League.png" />
+    <Content Include="LEAGUES\EFL_Championship.png" />
+    <Content Include="LEAGUES\EFL_League_One.png" />
+    <Content Include="LEAGUES\EFL_League_Two.png" />
+    <Content Include="LEAGUES\Ekstraklasa.png" />
+    <Content Include="LEAGUES\Eliteserien.png" />
+    <Content Include="LEAGUES\Eredivise.png" />
+    <Content Include="LEAGUES\Finnliiga.png" />
+    <Content Include="LEAGUES\HellasLeague.png" />
+    <Content Include="LEAGUES\Icons.png" />
+    <Content Include="LEAGUES\Indian_Super_League.png" />
+    <Content Include="LEAGUES\Internacional.png" />
+    <Content Include="LEAGUES\Irlandia_League.png" />
+    <Content Include="LEAGUES\IsuzuUTE_A_League.png" />
+    <Content Include="LEAGUES\K_League_One.png" />
+    <Content Include="LEAGUES\LA_LIGA_EASPORTS.png" />
+    <Content Include="LEAGUES\LA_LIGA_HYPERMOTION.png" />
+    <Content Include="LEAGUES\Liga_de_Chipre.png" />
+    <Content Include="LEAGUES\Liga_Hrvatska.png" />
+    <Content Include="LEAGUES\Liga_Portugal.png" />
+    <Content Include="LEAGUES\Liga_Profesional_Argentina.png" />
+    <Content Include="LEAGUES\Liga_Ucraniana.png" />
+    <Content Include="LEAGUES\Ligue_1_Uber_Eats.png" />
+    <Content Include="LEAGUES\Ligue_2_BKS.png" />
+    <Content Include="LEAGUES\Magyar_League.png" />
+    <Content Include="LEAGUES\Major_League_Socces.png" />
+    <Content Include="LEAGUES\Premier_League.png" />
+    <Content Include="LEAGUES\Saudi-League.png" />
+    <Content Include="LEAGUES\SerieA_TIM.png" />
+    <Content Include="LEAGUES\Serie_BKT.png" />
+    <Content Include="LEAGUES\Super_League.png" />
+    <Content Include="LEAGUES\Trendyol_Super_Lig.png" />
+    <Content Include="LEAGUES\United-Emirates_League.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountProfile.aspx.cs">
+      <DependentUpon>AccountProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountProfile.aspx.designer.cs">
+      <DependentUpon>AccountProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardGenerator - FC Mobile.Master.cs">
+      <DependentUpon>CardGenerator - FC Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardGenerator - FC Mobile.Master.designer.cs">
+      <DependentUpon>CardGenerator - FC Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CardGeneratorHome.aspx.cs">
+      <DependentUpon>CardGeneratorHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardGeneratorHome.aspx.designer.cs">
+      <DependentUpon>CardGeneratorHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CardGenerator - FC Mobile.Master" />
+    <Content Include="IMAGENES\Background.webp" />
+    <Content Include="IMAGENES\CardGenerator.webp" />
+    <Content Include="IMAGENES\DownloadPlayStore-removebg-preview.webp" />
+    <Content Include="IMAGENES\futbin-green-small.webp" />
+    <Content Include="IMAGENES\LoginIcon.webp" />
+    <Content Include="IMAGENES\luxa.org-opacity-changed-Background.webp" />
+    <Content Include="IMAGENES\RenderzCardDefault.avif" />
+    <Content Include="CruyffSans-Bold.ttf" />
+    <Content Include="IMAGENES\Ant_Barbuda.avif" />
+    <Content Include="IMAGENES\ArabiaSaudita.avif" />
+    <Content Include="IMAGENES\Belice.avif" />
+    <Content Include="IMAGENES\Butan.avif" />
+    <Content Include="IMAGENES\Eritrea.avif" />
+    <Content Include="IMAGENES\EU.avif" />
+    <Content Include="IMAGENES\Irlanda.avif" />
+    <Content Include="IMAGENES\Islandia.avif" />
+    <Content Include="IMAGENES\IslasCommon.avif" />
+    <Content Include="IMAGENES\SamoaAmericana.avif" />
+    <Content Include="IMAGENES\SanMarino.avif" />
+    <Content Include="IMAGENES\StKitts.avif" />
+    <Content Include="IMAGENES\SuaZilandia.avif" />
+    <Content Include="IMAGENES\Sudrafica.avif" />
+    <Content Include="IMAGENES\Suecia.avif" />
+    <Content Include="IMAGENES\Tunez.avif" />
+    <Content Include="IMAGENES\TurkMeistan.avif" />
+    <Content Include="IMAGENES\Venezuela.avif" />
+    <Content Include="IMAGENES\Zambia.avif" />
+    <None Include="packages.config" />
+    <Content Include="Sans_Condensed_BOLD.ttf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardGenerationEntidades\CardGenerationEntidades.csproj">
+      <Project>{cc98a557-af92-4ece-950d-d88415b22e63}</Project>
+      <Name>CardGenerationEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CardGeneratorLN\CardGeneratorLN.csproj">
+      <Project>{243d6c0d-42a4-479d-8763-5b672beb531e}</Project>
+      <Name>CardGeneratorLN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UPLOADS\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52412</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44338/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

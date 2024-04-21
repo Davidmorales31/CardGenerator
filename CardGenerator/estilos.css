@@ -1,0 +1,787 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.h1, h1 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.cont-flex-1 {
+    flex: 1;
+}
+/* Estilos de Fuente deletras */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+body, .body {
+    background-color: rgb(25, 25, 25); /* Color de fondo con opacidad */
+    background-image: url('IMAGENES/luxa.org-opacity-changed-Background.png');
+    background-size: cover;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#ddlNation option {
+    color: black;
+}
+
+.h1, h1 {
+    color: white;
+}
+
+.textLeft {
+    text-align: left;
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.contenedorCentradoHV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorCentradoH {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorCentradoV {
+    display: flex;
+    align-items: center;
+}
+contenedorCentradoHVModal {
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+    height: 100vh;
+}
+
+.content-body {
+    display: flex;
+    width: 1200px;
+}
+
+.content-body-body {
+    display: block;
+    width: 1200px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.header-content {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.icon-header {
+    width: 70%;
+    margin: 15px;
+}
+
+.img-content {
+    width: 32px;
+    height: auto;
+    border-radius: 15%;
+}
+
+.login-header {
+    width: 20%;
+    margin: 15px;
+    justify-content: right;
+}
+
+.btnLogin {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    color: black;
+    border: none;
+    border-radius: 4%;
+    background-color: #55CCA2;
+}
+
+.user-icon {
+    width: 10%;
+}
+
+.img-contentLogin {
+    width: 32px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.body-header {
+    display: flex;
+    margin: 40px;
+    /* background-color: white; */
+}
+
+.texto-body {
+    font-size: 20px;
+    text-align: left;
+    color: white;
+}
+
+@font-face {
+    font-family: "CruyffSans-Bold";
+    src: url(CruyffSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Sans_Condensed_BOLD";
+    src: url(Sans_Condensed_BOLD.ttf);
+}
+
+.body-body {
+    display: flex;
+    margin: 15px;
+    height: auto;
+    background-color: #202020;
+}
+
+.bodyContent {
+    display: block;
+    margin: 15px;
+    width: 100%;
+    height: 100%;
+    color: #55CCA2;
+}
+
+.bodyContent-body {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    height: 795px;
+}
+.bodyContent-body1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.CardGenerator {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+.CardDefault {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+.CardDefaultP {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+
+.imgCard {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+.imgCard1 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    z-index: 2;
+}
+
+.imgCard2 {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: 220px;
+    right: 190px;
+    z-index: 3;
+}
+
+.imgCard3 {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 224px;
+    right: 138px;
+    z-index: 3;
+}
+
+.imgCard4 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 220px;
+    right: 82px;
+    z-index: 3;
+}
+
+.imgCard5 {
+    position: absolute;
+    top: 195px;
+    z-index: 4;
+}
+
+.imgCard6 {
+    position: absolute;
+    top: 18px;
+    left: 65px;
+    z-index: 5;
+}
+
+.imgCard7 {
+    position: absolute;
+    top: 64px;
+    left: 69px;
+    z-index: 5;
+}
+
+.ButtonD-Con {
+    margin-top: 10px;
+}
+
+.btn-download {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color: black;
+    border: none;
+    border-radius: 4%;
+    background-color: #55CCA2;
+}
+
+.btn-change-text {
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    color: black;
+    border: none;
+    border-radius: 4%;
+    background-color: #55CCA2;
+}
+
+.NameCard {
+    font-size: 22px;
+    font-family: "CruyffSans-Bold", Arial, Helvetica, sans-serif;
+    color: #513D03;
+}
+
+.LabelNombreCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Centra horizontalmente */
+}
+
+.OVRCard {
+    font-size: 44px;
+    font-family: "Sans_Condensed_BOLD", Arial, Helvetica, sans-serif;
+    color: #513D03;
+}
+#ddlBackgrounds option {
+    color: black; /* Color del texto deseado */
+}
+.POSCard {
+    text-align:center;
+    font-size: 22px;
+    font-family: "CruyffSans-Bold", Arial, Helvetica, sans-serif;
+    color: #513D03;
+}
+
+.FormCard {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 20px;
+    color: black;
+    padding: 10px;
+}
+.content-login {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+}
+.aplyChangeCont {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    border-top: 0.3px solid white;
+    height: 270px;
+    background-color: #202020;
+    margin-top: 80px;
+}
+
+.footer-body {
+    width: 100%;
+    margin: 20px;
+}
+
+.Download-Img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-footer {
+    display: flex;
+}
+
+.fo-he-di {
+    display: inline;
+}
+
+.footer-footer {
+    margin: auto;
+}
+.content-lblo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+    text-align: center;
+    border-radius: 12px;
+}
+.message-label {
+    margin:10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: red;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.message-label2 {
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: green;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+.enlace {
+    text-decoration: none;
+}
+.TextGreen{
+    color: #55CCA2;
+}
+.imgAccount2 {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #55CCA2; /* Color y grosor del borde */
+    transition: transform 0.3s ease;
+}
+
+.imgAccount {
+    margin: 10px;
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #55CCA2; /* Color y grosor del borde */
+    transition: transform 0.3s ease;
+}
+    .imgAccount:hover {
+        transform: scale(1.1); /* Aumentar el tamaño en un 20% */
+        border: 2px solid green;
+    }
+
+.textProfile {
+    width: auto; /* Ancho máximo del contenedor */
+    word-wrap: break-word; /* Permite que el texto se ajuste automáticamente a la anchura del contenedor */
+}
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+    .wrapper h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .wrapper .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+    .input-box input::placeholder {
+        color: #fff;
+    }
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+    .remember-forgot a:hover {
+        text-decoration: underline;
+    }
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+    .register-link p a:hover {
+        text-decoration: underline;
+    }
+
+.title-perfil {
+    font-size: 40px;
+}
+
+.bg-custom {
+    background-color: rgba(85, 204, 162, 0.8) !important; /* Ajusta el valor de opacidad (el último número) según tu preferencia */
+}
+
+.blur {
+    filter: blur(3px); /* Ajusta el valor de desenfoque según tu preferencia */
+}
+
+#ddlLeague option{
+    color:black;
+}
+
+.errorMessage{
+    width: 100%;
+    text-align: center;
+    color: #55CCA2;
+    height:120px;
+}
+.errorMessageSpan {
+    color: #55CCA2;
+}
+@media (max-width: 920px) {
+    .title-perfil {
+        font-size: 20px;
+    }
+
+    .textLeft {
+        margin-top: 5px;
+    }
+
+    .body {
+        font-size: 0px;
+    }
+
+    .bodyContent-body {
+        display: block;
+        height: auto;
+    }
+
+
+    .bodyContent-body1 {
+        display: block;
+    }
+
+    .FormCard {
+        width: auto;
+    }
+
+    .CardGenerator {
+        width: auto;
+    }
+
+    .imgCard {
+        width: 250px;
+        height: 250px;
+    }
+    .imgCardP {
+        width: 250px;
+        height: 250px;
+    }
+
+    .imgCard2 {
+        width: 26.67px;
+        right: 185px;
+    }
+
+    .imgCard3 {
+        width: 26.67px;
+    }
+
+    .imgCard4 {
+        width: 24px;
+        height: 24px;
+        right: 90px;
+    }
+
+    .imgCard1 {
+        width: 264px;
+        right: 18px;
+        top: 17px;
+    }
+
+    .imgCard2, .imgCard3, .imgCard4 {
+        top: 210px;
+    }
+
+    .imgCard5 {
+        top: 185px;
+    }
+
+    .NameCard {
+        font-size: 18.83px;
+    }
+
+    .imgCard6 {
+        top: 42px;
+        left: 79px;
+    }
+
+    .imgCard7 {
+        top: 78px;
+        left: 82px;
+    }
+
+    .OVRCard {
+        font-size: 34.67px;
+    }
+
+    .POSCard {
+        font-size: 18.83px;
+    }
+
+    .imgAccount {
+        margin: 10px;
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+        border: 2px solid #55CCA2;
+        transition: transform 0.3s ease;
+    }
+    .imgCardP {
+        width: 180px;
+        height: 180px;
+    }
+
+    .CardDefaultP {
+        width: 100px;
+        height: 120px;
+        margin: auto;
+        position: relative;
+    }
+    .CardDefaultC {
+        width: 200px;
+        height: auto;
+        margin: auto;
+        position: relative;
+    }
+    .poppins-bold{
+        font-size: 17px;
+    }
+    .textbtn {
+        width: 100px;
+        font-size: 12px;
+    }
+}
