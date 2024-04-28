@@ -6,7 +6,7 @@
    <asp:Image ID="imgImagen" runat="server" />
     
 <%-->>>>>>> b816f0769c4964a182f621ce1c53ed49a90f685c--%>
- <!-- SECCION PARA EL CONTENIDO -->
+ <!-- SECCION PARA EL CONTENIDO --jajaj>
 
 
 
