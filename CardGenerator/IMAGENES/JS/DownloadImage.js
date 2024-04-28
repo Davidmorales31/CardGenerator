@@ -7,7 +7,7 @@ $("#Download").on('click', function () {
 var elemento;
 // Funcion DownloadImage();
 function DownloadImage() {
-    //Crear el elemto completo a descargar las cosas
+    //Crear el elemto completo a descargar las cosas god
     elemento = $('.CardDefault')[0];
     html2canvas(elemento).then(function (canvas) {
         // Aqui creamos la url de de la imagen 
