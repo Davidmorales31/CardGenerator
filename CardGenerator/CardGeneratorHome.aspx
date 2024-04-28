@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-﻿<%@ Page Title="" Language="C#" Async="true" MasterPageFile="~/CardGenerator - FC Mobile.Master" AutoEventWireup="true" CodeBehind="CardGeneratorHome.aspx.cs" Inherits="CardGenerator.CardGeneratorHome" %>
+
+<%@ Page Title="" Language="C#" Async="true" MasterPageFile="~/CardGenerator - FC Mobile.Master" AutoEventWireup="true" CodeBehind="CardGeneratorHome.aspx.cs" Inherits="CardGenerator.CardGeneratorHome" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -80,7 +80,7 @@
                         <button id="Download"type="button" class="btn-download"> Download </button>
                     </div>
                 </div>
-                   <div class="FormCard ">
+                                    <div class="FormCard ">
 
                     <div class="textLeft">
                         <div class="card-desing">
@@ -96,7 +96,7 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="campo1" class="poppins-semibold textLeft"> Load Render  </label> 
-                                        <label class="btn-download form-control" for="UploadButton1" style="background-color: #55cca2; text-align:center"> Upload Image <i class="fa-solid fa-upload" style="color: #000000;"></i></i> </label>
+                                        <label class="btn-download form-control" for="UploadButton1" style="background-color: #55cca2; text-align:center"> Upload Image <i class="fa-solid fa-upload" style="color: #000000;"></i> </label>
                                    <!--     <button id="UploadButton" class="btn-download form-control" style="background-color: #55cca2;"> Upload File <i class="fa-solid fa-upload" style="color: black solid #000;;" ></i> </button> -->
                                         <input type="file" id="UploadButton1" class="btn-download form-control" style="background-color: #55cca2; display:none;" onchange="uploadImage(this)" />
                                     </div>
@@ -261,19 +261,17 @@
             </div>
            
     </div>
-</div>
-
-<div class="aplyChangeCont contenedorCentradoHV">
-    <div class="form-group ">    
-        <asp:Button ID="btnAplychange" runat="server" Text=" Apply changes " CssClass="btn-aplyChange form-control" style="background-color: #55cca2;" OnClick="btnAplychange_Click"  />
     </div>
 </div>
 
+</div>
 
 
                 </div>
              </div>
             </div>
+                 </div>
+
             
             </div>
 
@@ -291,7 +289,5 @@
 >>>>>>> b816f0769c4964a182f621ce1c53ed49a90f685c--%>
 
  </div>
-                    
-</div>
-    </div>
+                   
 </asp:Content>
