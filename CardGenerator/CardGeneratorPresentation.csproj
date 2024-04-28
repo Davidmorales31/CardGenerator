@@ -420,10 +420,6 @@
       <Project>{cc98a557-af92-4ece-950d-d88415b22e63}</Project>
       <Name>CardGenerationEntidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CardGeneratorLN\CardGeneratorLN.csproj">
-      <Project>{243d6c0d-42a4-479d-8763-5b672beb531e}</Project>
-      <Name>CardGeneratorLN</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UPLOADS\" />
