@@ -1,9 +1,11 @@
+<<<<<<< HEAD
 ﻿<%@ Page Title="" Language="C#" Async="true" MasterPageFile="~/CardGenerator - FC Mobile.Master" AutoEventWireup="true" CodeBehind="CardGeneratorHome.aspx.cs" Inherits="CardGenerator.CardGeneratorHome" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <asp:Image ID="imgImagen" runat="server" />
     
+<%-->>>>>>> b816f0769c4964a182f621ce1c53ed49a90f685c--%>
  <!-- SECCION PARA EL CONTENIDO -->
 
 
@@ -282,8 +284,11 @@
     </section>
     <asp:HiddenField id="lblNationText" runat="server" Value="Brazil"/>
     <asp:HiddenField ID="lblLeagueText" runat="server" Value="LA LIGA EA SPORTS" />
+<%--<<<<<<< HEAD--%>
     <asp:HiddenField ID="urlImagehtml2" runat="server" Value=""/>
         <asp:HiddenField ID="apiKey" runat="server" Value="8HCAdU7MjfrU59taNVBv7P5j"/>
+<%--=======
+>>>>>>> b816f0769c4964a182f621ce1c53ed49a90f685c--%>
 
  </div>
                     

@@ -8,7 +8,7 @@ var elemento;
 // Funcion DownloadImage();
 function DownloadImage() {
     //Crear el elemto completo a descargar las cosas god
-    elemento = $('.CardDefault')[0];
+   elemento = $('.CardDefault')[0];
     html2canvas(elemento).then(function (canvas) {
         // Aqui creamos la url de de la imagen 
         var ImagenURL = canvas.toDataURL("image/png");
@@ -91,9 +91,9 @@ async function removeBackgroundFromImage(apiKey, imageUrl) {
 }
 
 $("#ChangeColorText").on('click', function (e) {
-        e.preventDefault();
-        ChangeColorText();
-    })
+    e.preventDefault();
+    ChangeColorText();
+})
 
 var colorText;
 // SECCION PARA CAMBIAR EL COLOR DE LOS TEXTOS 

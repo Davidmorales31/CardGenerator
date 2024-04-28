@@ -19,6 +19,7 @@ using System.Drawing;
 using static System.Net.Mime.MediaTypeNames;
 
 
+
 namespace CardGenerator
 {
     public partial class CardGeneratorHome : System.Web.UI.Page
@@ -84,7 +85,7 @@ namespace CardGenerator
             ddlBackgrounds.DataSource = Lista;
             ddlBackgrounds.DataTextField = "DescripcionEN";
             ddlBackgrounds.DataValueField = "BackgroundUrl";
-            //     ddlBackgrounds.Attributes["style"] = "color: black;";
+       //     ddlBackgrounds.Attributes["style"] = "color: black;";
 
             ddlBackgrounds.DataBind();
         }
@@ -92,7 +93,7 @@ namespace CardGenerator
         public void LLenarDDLLeague()
         {
             List<League> Lista = ListarLeague();
-
+         
 
             ddlLeague.DataSource = Lista;
             ddlLeague.DataTextField = "LegaueText";
@@ -104,7 +105,7 @@ namespace CardGenerator
         public void LLenarDDL2()
         {
             List<Nation> Lista = Listar2();
-
+        
 
 
             ddlNation.DataSource = Lista;
@@ -123,7 +124,7 @@ namespace CardGenerator
         }
         public List<Nation> Listar2()
         {
-            List<Nation> Lista = NationsLN.ListarBack();
+            List<Nation> Lista = NationsLN.ListarBack();         
             return Lista;
         }
 
@@ -147,7 +148,7 @@ namespace CardGenerator
         {
             List<Nation> Lista = NationsLN.ListarFiltrado(searchText);
             return Lista;
-
+            
         }
 
 
