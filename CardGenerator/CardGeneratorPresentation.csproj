@@ -103,6 +103,7 @@
     <Content Include="IMAGENES\Back_BaseIconJourney.png" />
     <Content Include="IMAGENES\Back_Bronce.png" />
     <Content Include="IMAGENES\Back_Captains.png" />
+    <Content Include="IMAGENES\Back_Centurions.png" />
     <Content Include="IMAGENES\Back_ConferenceCup.png" />
     <Content Include="IMAGENES\Back_DayoftheDead.png" />
     <Content Include="IMAGENES\Back_EuroCup.png" />
@@ -122,12 +123,14 @@
     <Content Include="IMAGENES\Back_IconMls.png" />
     <Content Include="IMAGENES\Back_IconNationalValue.png" />
     <Content Include="IMAGENES\Back_IconPremiunJourney.png" />
+    <Content Include="IMAGENES\Back_IconPrime_Centurions.png" />
     <Content Include="IMAGENES\Back_IconRamadan.png" />
     <Content Include="IMAGENES\Back_IconRivals.png" />
     <Content Include="IMAGENES\Back_IconToty.png" />
     <Content Include="IMAGENES\Back_IconUCL.png" />
     <Content Include="IMAGENES\Back_IconWelcome.png" />
     <Content Include="IMAGENES\Back_IconWinterWilds.png" />
+    <Content Include="IMAGENES\Back_Icon_Centurions.png" />
     <Content Include="IMAGENES\Back_LibertadoresCup.png" />
     <Content Include="IMAGENES\Back_LibertadoresCupSilver.png" />
     <Content Include="IMAGENES\Back_LunarYear.png" />
@@ -155,6 +158,7 @@
     <Content Include="IMAGENES\Back_Utoty.png" />
     <Content Include="IMAGENES\Back_Welcome.png" />
     <Content Include="IMAGENES\Back_WelcomeMedium.png" />
+    <Content Include="IMAGENES\Bacl_CentuionsPrime.png" />
     <Content Include="IMAGENES\Bahamas.png" />
     <Content Include="IMAGENES\Bangladesh.png" />
     <Content Include="IMAGENES\Barbados.png" />

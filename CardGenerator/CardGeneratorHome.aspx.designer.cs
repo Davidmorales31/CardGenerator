@@ -24,6 +24,15 @@ namespace CardGenerator
         protected global::System.Web.UI.WebControls.Image imgImagen;
 
         /// <summary>
+        /// Control btn_Modal_Close.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btn_Modal_Close;
+
+        /// <summary>
         /// Control txtSearchNation.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace CardGenerator
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlNation;
+
+        /// <summary>
+        /// Control btn_Modal_Close2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btn_Modal_Close2;
 
         /// <summary>
         /// Control txtSearchLeague.

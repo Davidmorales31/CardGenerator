@@ -17,6 +17,7 @@
     <div class="modal-content">
       <div class="modal-header" style="background-color:#55cca2">
         <h5 class="modal-title poppins-bold" id="exampleModalLabel" style="color:black"> Select Nation </h5>
+          <button ID="btn_Modal_Close" runat="server" class="btn-Close"> <i class="fa-solid fa-square-xmark fa-2xs" style="color: #000000;"></i> </button>
       </div>
       <div class="modal-body poppins-semibold">
         <asp:TextBox ID="txtSearchNation" runat="server" placeholder="Search Nation" CssClass="form-control" onkeyup="filtrerNations()"/>
@@ -33,6 +34,7 @@
     <div class="modal-content">
       <div class="modal-header" style="background-color:#55cca2">
         <h5 class="modal-title poppins-bold" id="ModalLeagueTitle" style="color:black"> Select League </h5>
+           <button ID="btn_Modal_Close2" runat="server" class="btn-Close"> <i class="fa-solid fa-square-xmark fa-2xs" style="color: #000000;"></i> </button>
       </div>
       <div class="modal-body poppins-semibold">
     <!--    <asp:TextBox ID="txtSearchLeague" runat="server" placeholder="Search League" CssClass="form-control" onkeyup="filtrerNations()"/> -->
@@ -57,7 +59,7 @@
             </div>
 
             <div class="body-body">
-            <div class="bodyContent ">
+            <div class="bodyContent">
              <h1 class="poppins-bold contenedorCentradoV">Design your FC Mobile card</h1>   
              <div class="bodyContent-body">
                 <div class="CardGenerator">
@@ -217,14 +219,13 @@
         <div class="row">
             <div class="col-sm-6">
                   <label for="campo1" class="poppins-semibold textLeft"> Nation <i class="fa-solid fa-flag" style="color: #55cca2;"></i> </label>
-            <!--    <di class="form-group"> -->
                     <div class="form-control bg-custom" id="ModalActivate" data-bs-toggle="modal" data-bs-target="#exampleModal" >
 
                         <div class="row contenedorCentradoV ">
-                        <div class="col-sm-8">
+                        <div class="col-sm-10">
                         <asp:Label ID="lblNationsTextSleeted" runat="server" Text=" Aqui va el nombre " CssClass="poppins-semibold textLeft "></asp:Label>
                          </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-2">
                         <asp:Image ID="imgNation" runat="server" ImageUrl="~/IMAGENES/Ecuador.png" AlternateText="Nation" Width="25px" Height="25px"/>
 
                         </div>
@@ -238,10 +239,10 @@
                              <div class="form-control bg-custom" id="ModalLeagues" data-bs-toggle="modal" data-bs-target="#ModalLeague">
 
                         <div class="row contenedorCentradoV ">
-                        <div class="col-sm-9">
+                        <div class="col-sm-10">
                         <asp:Label ID="lblLeagueSelect" runat="server" Text="" CssClass="poppins-semibold textLeft "></asp:Label>
                          </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-2">
                         <asp:Image ID="imgLeagueSelect" runat="server" ImageUrl="~/IMAGENES/Ecuador.png" AlternateText="Nation" Width="25px" Height="25px"/>
 
                         </div>
@@ -276,7 +277,7 @@
             </div>
 
         </div>
-
+            </div>
                
 
     </section>

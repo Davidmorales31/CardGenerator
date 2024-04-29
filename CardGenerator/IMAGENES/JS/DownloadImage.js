@@ -13,14 +13,9 @@ function DownloadImage() {
         // Aqui creamos la url de de la imagen 
         var ImagenURL = canvas.toDataURL("image/png");
         // Almacenas esa url en un HiddenField oculto 
-        $("#urlImagehtml2").val(ImagenURL);
-        console.log(ImagenURL);
-
         // Hacemos la solitud al API Remove.bg
         var apiKey = $("#apiKey").val();
-
         removeBackgroundFromImage(apiKey, ImagenURL);
-
     });
 };
 
@@ -44,13 +39,7 @@ async function removeBackgroundFromImage(apiKey, imageUrl) {
             const reader = new FileReader();
 
             reader.onload = function () {
-                //const base64String = reader.result.split(",")[1];
-                //const imgElement = document.createElement("img");
-                //imgElement.src = "data:image/png;base64," + base64String;
-                //document.body.appendChild(imgElement);
-
                 const base64String = reader.result.split(",")[1];
-
                 // Decodifica el string base64 a un array de bytes
                 const byteCharacters = atob(base64String);
 
@@ -70,7 +59,7 @@ async function removeBackgroundFromImage(apiKey, imageUrl) {
                 // Crea un enlace
                 const downloadLink = document.createElement('a');
                 downloadLink.href = imageUrl;
-                downloadLink.download = 'imagen_sin_fondo.png'; // Puedes cambiar el nombre del archivo aquí
+                downloadLink.download = 'CardGenertor.png'; // Puedes cambiar el nombre del archivo aquí
 
                 // Haz clic en el enlace para iniciar la descarga
                 downloadLink.click();
@@ -218,6 +207,19 @@ function uploadCard(e) {
     ddCard = $("#ddlBackgrounds").val();
     $("#card").attr("src", ddCard)
 }
+
+// OnClick Event Close Modal Select Nation
+$("#btn_Modal_Close").on('click', function (e) {
+    e.preventDefault();
+    $("#exampleModal").modal('hide');
+    $('.bodyBlur').removeClass();
+})
+$("#btn_Modal_Close2").on('click', function (e) {
+    e.preventDefault();
+    $("#ModalLeague").modal('hide');
+    $('.bodyBlur').removeClass();
+})
+
 
 
 var Nation;
